@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Lab 12 — product catalogue for the Dog-Ear Books online bookstore.
+     Loaded in the browser with fetch() + DOMParser (see js/app.js → loadXML). -->
+<catalogue store="Dog-Ear Books" currency="INR">
+  <categories>
+    <category id="fiction">Fiction</category>
+    <category id="science">Science</category>
+    <category id="tech">Technology</category>
+    <category id="selfhelp">Self-help</category>
+    <category id="history">History</category>
+  </categories>
+
+  <book id="B101" category="fiction" featured="true">
+    <title>The Midnight Library</title>
+    <author>Matt Haig</author>
+    <price>399</price>
+    <mrp>499</mrp>
+    <rating>4.3</rating>
+    <pages>304</pages>
+    <stock>18</stock>
+    <cover from="#1E3A8A" to="#7C3AED"/>
+    <description>Between life and death sits a library of every life you could have lived. Nora gets to try them all.</description>
+  </book>
+  <book id="B102" category="fiction">
+    <title>Klara and the Sun</title>
+    <author>Kazuo Ishiguro</author>
+    <price>449</price>
+    <mrp>599</mrp>
+    <rating>4.0</rating>
+    <pages>320</pages>
+    <stock>9</stock>
+    <cover from="#B45309" to="#F59E0B"/>
+    <description>An Artificial Friend watches the people around her and tries to understand what love asks of us.</description>
+  </book>
+  <book id="B103" category="fiction" featured="true">
+    <title>The Hobbit</title>
+    <author>J. R. R. Tolkien</author>
+    <price>299</price>
+    <mrp>350</mrp>
+    <rating>4.7</rating>
+    <pages>310</pages>
+    <stock>25</stock>
+    <cover from="#065F46" to="#10B981"/>
+    <description>Bilbo Baggins is swept into a quest for dragon gold, and finds more courage than he knew he had.</description>
+  </book>
+  <book id="B104" category="fiction">
+    <title>Project Hail Mary</title>
+    <author>Andy Weir</author>
+    <price>499</price>
+    <mrp>699</mrp>
+    <rating>4.6</rating>
+    <pages>496</pages>
+    <stock>0</stock>
+    <cover from="#0F172A" to="#0EA5E9"/>
+    <description>A lone astronaut wakes with no memory and one job: save the Earth from a dimming Sun.</description>
+  </book>
+
+  <book id="B201" category="science" featured="true">
+    <title>A Brief History of Time</title>
+    <author>Stephen Hawking</author>
+    <price>350</price>
+    <mrp>450</mrp>
+    <rating>4.5</rating>
+    <pages>256</pages>
+    <stock>14</stock>
+    <cover from="#111827" to="#4F46E5"/>
+    <description>From the Big Bang to black holes, a clear tour of the questions physics is still asking.</description>
+  </book>
+  <book id="B202" category="science">
+    <title>The Selfish Gene</title>
+    <author>Richard Dawkins</author>
+    <price>420</price>
+    <mrp>550</mrp>
+    <rating>4.2</rating>
+    <pages>544</pages>
+    <stock>7</stock>
+    <cover from="#9F1239" to="#F43F5E"/>
+    <description>Evolution told from the gene's point of view, and why that changes how we see behaviour.</description>
+  </book>
+  <book id="B203" category="science">
+    <title>Cosmos</title>
+    <author>Carl Sagan</author>
+    <price>380</price>
+    <mrp>499</mrp>
+    <rating>4.6</rating>
+    <pages>396</pages>
+    <stock>11</stock>
+    <cover from="#312E81" to="#DB2777"/>
+    <description>Sagan's classic journey through space, time and the history of scientific discovery.</description>
+  </book>
+
+  <book id="B301" category="tech" featured="true">
+    <title>Clean Code</title>
+    <author>Robert C. Martin</author>
+    <price>599</price>
+    <mrp>799</mrp>
+    <rating>4.4</rating>
+    <pages>464</pages>
+    <stock>20</stock>
+    <cover from="#1E40AF" to="#06B6D4"/>
+    <description>Practical rules for writing code that other people can read, test and change with confidence.</description>
+  </book>
+  <book id="B302" category="tech">
+    <title>Eloquent JavaScript</title>
+    <author>Marijn Haverbeke</author>
+    <price>549</price>
+    <mrp>699</mrp>
+    <rating>4.5</rating>
+    <pages>472</pages>
+    <stock>16</stock>
+    <cover from="#A16207" to="#EAB308"/>
+    <description>A modern introduction to programming through JavaScript, the DOM and the browser.</description>
+  </book>
+  <book id="B303" category="tech">
+    <title>The Pragmatic Programmer</title>
+    <author>David Thomas &amp; Andrew Hunt</author>
+    <price>649</price>
+    <mrp>899</mrp>
+    <rating>4.6</rating>
+    <pages>352</pages>
+    <stock>5</stock>
+    <cover from="#334155" to="#64748B"/>
+    <description>Timeless habits and tips for becoming a more effective, adaptable software developer.</description>
+  </book>
+
+  <book id="B401" category="selfhelp" featured="true">
+    <title>Atomic Habits</title>
+    <author>James Clear</author>
+    <price>399</price>
+    <mrp>499</mrp>
+    <rating>4.8</rating>
+    <pages>320</pages>
+    <stock>30</stock>
+    <cover from="#C2410C" to="#FB923C"/>
+    <description>Tiny changes, remarkable results: a proven system for building good habits and breaking bad ones.</description>
+  </book>
+  <book id="B402" category="selfhelp">
+    <title>Deep Work</title>
+    <author>Cal Newport</author>
+    <price>349</price>
+    <mrp>450</mrp>
+    <rating>4.4</rating>
+    <pages>304</pages>
+    <stock>12</stock>
+    <cover from="#0F766E" to="#2DD4BF"/>
+    <description>Rules for focused success in a distracted world, and why concentration is a superpower.</description>
+  </book>
+  <book id="B403" category="selfhelp">
+    <title>Ikigai</title>
+    <author>Héctor García &amp; Francesc Miralles</author>
+    <price>299</price>
+    <mrp>399</mrp>
+    <rating>4.1</rating>
+    <pages>208</pages>
+    <stock>22</stock>
+    <cover from="#BE123C" to="#FDA4AF"/>
+    <description>The Japanese secret to a long and happy life, drawn from interviews in Okinawa.</description>
+  </book>
+
+  <book id="B501" category="history" featured="true">
+    <title>Sapiens</title>
+    <author>Yuval Noah Harari</author>
+    <price>499</price>
+    <mrp>650</mrp>
+    <rating>4.5</rating>
+    <pages>512</pages>
+    <stock>15</stock>
+    <cover from="#78350F" to="#D97706"/>
+    <description>How one species of ape came to rule the planet: a brief history of humankind.</description>
+  </book>
+  <book id="B502" category="history">
+    <title>The Discovery of India</title>
+    <author>Jawaharlal Nehru</author>
+    <price>325</price>
+    <mrp>399</mrp>
+    <rating>4.3</rating>
+    <pages>656</pages>
+    <stock>8</stock>
+    <cover from="#166534" to="#F97316"/>
+    <description>Written in prison in 1944, a sweeping account of India's history, culture and philosophy.</description>
+  </book>
+  <book id="B503" category="history">
+    <title>Guns, Germs, and Steel</title>
+    <author>Jared Diamond</author>
+    <price>475</price>
+    <mrp>599</mrp>
+    <rating>4.2</rating>
+    <pages>528</pages>
+    <stock>10</stock>
+    <cover from="#44403C" to="#A8A29E"/>
+    <description>Why did some societies come to dominate others? Geography holds a surprising answer.</description>
+  </book>
+</catalogue>

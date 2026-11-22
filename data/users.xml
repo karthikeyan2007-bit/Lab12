@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Demo accounts for the Login page. New accounts made on the Registration page
+     are kept in the browser (localStorage), since this static site has no server.
+     These are throwaway lab test values, not real credentials. -->
+<users>
+  <user>
+    <name>Demo Reader</name>
+    <email>demo@dogear.test</email>
+    <password>Demo@123</password>
+    <phone>9876543210</phone>
+    <address>12 Library Road, Bengaluru</address>
+  </user>
+</users>

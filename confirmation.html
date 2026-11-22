@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order confirmed — Dog-Ear Books</title>
+  <meta name="description" content="Your Dog-Ear Books order confirmation.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%236D28D9'/%3E%3Cpath d='M21 0h2a9 9 0 0 1 9 9v2z' fill='%23C4B5FD'/%3E%3Cpath d='M9 9h9a3 3 0 0 1 3 3v11H12a3 3 0 0 1-3-3z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="confirmation">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main-content" class="container">
+    <div class="receipt-wrap">
+      <div class="empty" id="confirm-empty-state" hidden>
+        <div class="empty-blob">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12M3.29 7 12 12l8.71-5"/></svg>
+        </div>
+        <h1 style="font-size:1.8rem;">No order yet</h1>
+        <p>We couldn't find a recent order in this browser. Pick a book and it will show up here.</p>
+        <a class="btn btn-primary" href="catalogue.html">Browse the catalogue</a>
+      </div>
+
+      <div class="receipt" id="confirm-receipt-slip" hidden>
+        <div class="receipt-head">
+          <div class="success-blob">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h1>Thanks, <span id="confirm-recipient-firstname">reader</span>!</h1>
+          <p>Your order is confirmed and <span id="confirm-payment-stamp">paid</span>. We'll pack it within a day.</p>
+        </div>
+
+        <div class="facts">
+          <div class="fact" style="--tint: var(--primary-soft);">
+            <span class="fact-label">Order number</span>
+            <span class="fact-value" id="confirm-order-id"></span>
+          </div>
+          <div class="fact" style="--tint: var(--sky);">
+            <span class="fact-label">Ordered on</span>
+            <span class="fact-value" id="confirm-order-date"></span>
+          </div>
+          <div class="fact" style="--tint: var(--mint);">
+            <span class="fact-label">Arrives by</span>
+            <span class="fact-value" id="confirm-order-eta"></span>
+          </div>
+          <div class="fact" style="--tint: var(--peach);">
+            <span class="fact-label">Payment</span>
+            <span class="fact-value" id="confirm-order-method"></span>
+          </div>
+        </div>
+
+        <h2 style="font-size:1.2rem;">What's in the parcel</h2>
+        <ul class="items" id="confirm-line-items"></ul>
+
+        <div class="grand">
+          <span>Total</span>
+          <strong id="confirm-order-total"></strong>
+        </div>
+
+        <div class="ship-to">
+          <h3>Delivering to</h3>
+          <p id="confirm-shipping-address"></p>
+        </div>
+
+        <div class="receipt-actions">
+          <a class="btn btn-primary" href="catalogue.html">Keep browsing</a>
+          <a class="btn btn-soft" href="index.html">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
